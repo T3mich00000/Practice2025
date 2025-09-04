@@ -291,3 +291,169 @@ figcaption
     background: transparent;
     border: 2px solid var(--brand);
 }
+
+.btn-ghost
+{
+    background: transparent;
+    border: 1px dashed rgba(255, 255, 255, .5);
+}
+
+.btn--sm
+{
+    padding: 10px 6px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn--lg
+{
+    padding: 14px 20px;
+    border-radius: 12px;
+}
+
+.cta
+{
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 var(--space-3);
+}
+
+.card
+{
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: var(--space-5);
+    box-shadow: var(--shadow-1);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover
+{
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2);
+}
+
+.card__title
+{
+    margin: 0 0 var(--space-2);
+}
+
+.card__text
+{
+    margin: 0;
+}
+
+.cards
+{
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: 1fr;
+}
+
+@media(min-width:720px)
+{
+    .cards
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width:1024px)
+{
+    .cards
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.post
+{
+    overflow:hidden;
+}
+
+.post__title
+{
+    margin: 0 0 var(--space-2);
+}
+
+.post__meta
+{
+    margin: 0 0 var(--space-4);
+    opacity: .9;
+    font-size: .95rem;
+}
+
+.post__media
+{
+    margin: var(--space-4) 0 var(--space-3);
+}
+
+.post__media img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.post__footer
+{
+    margin-top: var(--space-3);
+}
+
+.tags
+{
+    display: flex;
+    gap: var(--space-2);
+    padding: 0;
+    list-style: none;
+    border-radius: 999px;
+}
+
+.tags li
+{
+    font-size: .85rem;
+    opacity: .95;
+    background: rgba(255, 255, 255, .12);
+    padding: 4px 8px;
+    border-radius: var(--radius);
+}
+
+.post
+{
+    scroll-margin-top: 80px;
+}
+
+.team
+{
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width:720px)
+{
+    .team
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:1024px)
+{
+    .team
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.member__name
+{
+    margin: 0 0 var(--space-2);
+    font-size: var(--fs-20);
+}
+
+.member__role,
+.member__contrib
+{
+    margin: 4px 0;
+}
