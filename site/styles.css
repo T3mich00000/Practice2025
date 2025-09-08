@@ -457,3 +457,163 @@ figcaption
 {
     margin: 4px 0;
 }
+
+.image-container
+{
+    margin: var(--space-3) 0;
+}
+
+.image-container img
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.table
+{
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.table th, .table td
+{
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.table th
+{
+    text-align: left;
+    font-weight: 700;
+}
+
+.site-footer
+{
+    text-align: center;
+    margin-top: var(--space-8);
+    padding: var(--space-4) 0;
+    background-color: #333;
+    color: #fff;
+    font-size: var(--fs-14);
+}
+
+.text-center
+{
+    text-align: center !important;
+}
+
+.text-right
+{
+    text-align: right !important;
+}
+
+.muted
+{
+    color:var(--muted) !important;
+}
+
+.mt-0
+{
+    margin-top: 0 !important;
+}
+
+.mt-2
+{
+    margin-top: var(--space-2) !important;
+}
+
+.mt-4
+{
+    margin-top: var(--space-4) !important;
+}
+
+.mt-6
+{
+    margin-top: var(--space-6) !important;
+}
+
+.mb-0
+{
+    margin-bottom: 0 !important;
+}
+
+.mb-2
+{
+    margin-bottom: var(--space-2) !important;
+}
+
+.mb-4
+{
+    margin-bottom: var(--space-4) !important;
+}
+
+.mb-6
+{
+    margin-bottom: var(--space-6) !important;
+}
+
+.max-w-600
+{
+    max-width: 600px;
+}
+
+.max-w-800
+{
+    max-width: 800px;
+}
+
+.center 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:target
+{
+    outline: 2px dashed rgba(255, 255, 255, .35);
+    outline-offset: 6px;
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+    *{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media print
+{
+    body 
+    {
+        background: #fff !important;
+    }
+    .site-header, .site-footer, .site-nav, .action, .skip-link
+    {
+        display: none !important;
+    }
+    .content
+    {
+        background: #fff !important;
+        box-shadow: none !important;
+    }
+    img 
+    {
+        border: none !important;
+    }
+    a 
+    {
+        color: #000 !important;
+        text-decoration: underline;
+    }
+}
+
+/* Fix hero image sizing and prevent overflow */
+.hero_figure img { width: 100%; height: auto; display: block; }
+.hero_inner { align-items: center; }
+
