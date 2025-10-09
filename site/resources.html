@@ -2,30 +2,24 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, internal-scale-1">
-        <title>
-            Ресурсы проекта "Цифры в тумане"
-        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ресурсы проекта "Цифры в тумане"</title>
         <meta name="description" content="Проект «Цифры в тумане» — о том, как цифровые технологии меняют образование, и как мы делаем обучающий сериал">
-        <link rel="stylesheet" href="styles.css"/>
-    
-    <link rel="icon" href="images/иконка1.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/иконка1.ico" type="image/x-icon">
-</head>
-
-     <body class="page">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/иконка1.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/иконка1.ico" type="image/x-icon">
+    </head>
+    <body class="page">
         <a class="skip-link" href="#content">Перейти к содержанию</a>
 
         <header class="site-header">
             <div class="container">
-                <h1 class="site-title">
-                    Ресурсы
-                </h1>
+                <h1 class="site-title">Ресурсы</h1>
                 <nav class="site-nav" aria-label="Главная навигация">
                     <a href="index.html">Главная</a>
-                    <a href="about.html" >О проекте</a>
+                    <a href="about.html">О проекте</a>
                     <a href="team.html">О команде</a>
-                    <a href="journal.html" >Журнал</a>
+                    <a href="journal.html">Журнал</a>
                     <a href="resources.html" aria-current="page">Ресурсы</a>
                 </nav>
             </div>
@@ -33,25 +27,25 @@
 
         <main id="content" class="content container">
             <section class="section">
-                <h2>Подборки</h2>
-                <ul class="list">
+                <h2 data-parallax="0.08">Подборки</h2>
+                <ul class="list" data-parallax="0.08">
                     <li><a href="https://t.me/smokednumbers/13" target="_blank" rel="noopener">Роботы — реальность или фантастика?</a></li>
                     <li><a href="https://vk.com/wall-227454792_4" target="_blank" rel="noopener">Рекомендации в сфере кино от создателей сериала</a></li>
                 </ul>
             </section>
 
             <section class="section">
-                <h2>Диаграмма Ганта</h2>
+                <h2 data-parallax="0.08">Диаграмма Ганта</h2>
                 <p>Диаграмма Ганта позволяет наглядно увидеть процесс организации проекта и продвижение по созданию обучающего контента.</p>
-                <div class="image-container">
+                <div class="image-container" data-parallax="0.12" data-parallax-scale="1.02">
                     <img src="images/диаграмма ганта.png" alt="Диаграмма Ганта" loading="lazy">
                 </div>
             </section>
 
             <section class="section">
-                <h2>Дорожная карта проекта</h2>
+                <h2 data-parallax="0.08">Дорожная карта проекта</h2>
                 <p>Дорожная карта помогает планировать и отслеживать задачи, а также визуализировать продвижение работы по проекту, фиксируя все этапы и успехи.</p>
-                <div class="image-container">
+                <div class="image-container" data-parallax="0.12" data-parallax-scale="1.02">
                     <img src="images/дорожная карта.png" alt="Дорожная карта проекта" loading="lazy">
                 </div>
             </section>
@@ -59,14 +53,13 @@
 
         <footer class="site-footer">
             <div class="container">
-                <p>
-                    © <span id="year"></span> Проектная команда ЦИФРЫ В ТУМАНЕ
-                </p>
+                <p>© <span id="year"></span> Проектная команда ЦИФРЫ В ТУМАНЕ</p>
             </div>
         </footer>
 
+        <script src="Animation.js" defer></script>
         <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
+          document.getElementById('year').textContent = new Date().getFullYear();
         </script>
     </body>
 </html>
